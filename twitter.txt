@@ -1,0 +1,5 @@
+http://code.google.com/p/oauth/source/browse/code/javascript/oauth.js?r=1136
+http://moonlitscript.com/post.cfm/how-to-use-oauth-and-twitter-in-your-node-js-expressjs-app/
+http://blog.joeandrieu.com/2012/01/30/the-worlds-simplest-autotweeter-in-node-js/
+https://dev.twitter.com/docs/auth/oauth/single-user-with-examples
+https://github.com/ciaranj/node-oauth/blob/master/examples/express-gdata/server.js
