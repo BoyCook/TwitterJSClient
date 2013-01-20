@@ -2,17 +2,21 @@ Twitter = require('../../lib/Twitter').Twitter;
 
 describe('Twitter', function () {
     var twitter;
+    var config = {
+        consumerKey: 'consumer_key',
+        consumerSecret: 'consumer_secret',
+        accessToken: 'access_token',
+        accessTokenSecret: 'access_token_secret',
+        callBackUrl: 'http://craigcook.co.uk/auth/twitter/callback'
+    };
+
     var error = function (code, data) {
         console.log('ERROR [%s]', code);
         done();
     };
-    var success = function (data) {
-        expect(data.length).toEqual(20);
-        done();
-    };
 
     beforeEach(function (done) {
-        twitter = new Twitter();
+        twitter = new Twitter(config);
         expect(twitter).toBeDefined();
         expect(twitter.oauth).toBeDefined();
         done();
