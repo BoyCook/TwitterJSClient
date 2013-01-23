@@ -1,4 +1,4 @@
-Twitter = require('../../lib/Twitter').Twitter;
+Twitter = require('../../lib/twitter').Twitter;
 
 describe('Twitter', function () {
     var twitter;
