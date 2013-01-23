@@ -1,14 +1,10 @@
-Twitter = require('../../lib/twitter').Twitter;
+var Twitter = require('../../lib/twitter').Twitter;
+var fs = require('fs');
 
 describe('Twitter', function () {
     var twitter;
-    var config = {
-        consumerKey: 'consumer_key',
-        consumerSecret: 'consumer_secret',
-        accessToken: 'access_token',
-        accessTokenSecret: 'access_token_secret',
-        callBackUrl: 'http://craigcook.co.uk/auth/twitter/callback'
-    };
+    var config;
+
 
     var error = function (code, data) {
         console.log('ERROR [%s]', code);
@@ -16,6 +12,7 @@ describe('Twitter', function () {
     };
 
     beforeEach(function (done) {
+        config = JSON.parse(fs.readFileSync('./test/spec/properties.json', encoding="ascii"));
         twitter = new Twitter(config);
         expect(twitter).toBeDefined();
         expect(twitter.oauth).toBeDefined();
