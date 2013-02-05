@@ -6,7 +6,5 @@ test
 .npmignore
 Makefile
 twitter.txt
-README.md
-*.md
 *.iml
 *.ipr
