@@ -4,7 +4,6 @@ var fs = require('fs');
 describe('Twitter', function () {
     var twitter;
     var config;
-
     var error = function (err, response, body) {
         console.log('ERROR [%s]', err);
         done();
