@@ -5,9 +5,8 @@ describe('Twitter', function () {
     var twitter;
     var config;
 
-
-    var error = function (code, data) {
-        console.log('ERROR [%s]', code);
+    var error = function (err, response, body) {
+        console.log('ERROR [%s]', err);
         done();
     };
 
