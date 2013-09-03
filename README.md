@@ -3,12 +3,19 @@ A twitter client written in Javascript
 
 ## Usage
 
+	var error = function (err, response, body) {
+		console.log('ERROR [%s]', err);
+    };
+    var success = function (data) {
+    	console.log('Data [%s]', data);
+    };
+
     var twitter = new Twitter(config);
-	twitter.getUserTimeline();
-	twitter.getMentionsTimeline();
-	twitter.getHomeTimeline();
-	twitter.getReTweetsOfMe();
-	twitter.getTweet();
+	twitter.getUserTimeline({ screen_name: 'BoyCook', count: '10'}, error, success);
+	twitter.getMentionsTimeline({ count: '10'}, error, success);
+	twitter.getHomeTimeline({ count: '10'}, error, success);
+	twitter.getReTweetsOfMe({ count: '10'}, error, success);
+	twitter.getTweet({ id: '1111111111'}, error, success);
 
 ## Config
 The config is the OAuth properties for the account that the client connects with. They look like this:
