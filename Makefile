@@ -12,7 +12,7 @@ test-spec:
 	@NODE_ENV=test jasmine-node test/spec --junitreport --forceexit
 
 test-unit:
-	@NODE_ENV=test mocha \
+	@NODE_ENV=test mocha test/spec \
 		--reporter $(REPORTER) \
 		$(MOCHA_OPTS)
 
