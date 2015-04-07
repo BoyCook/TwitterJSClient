@@ -16,10 +16,9 @@ A twitter client written in Javascript
 	twitter.getHomeTimeline({ count: '10'}, error, success);
 	twitter.getReTweetsOfMe({ count: '10'}, error, success);
 	twitter.getTweet({ id: '1111111111'}, error, success);
-
-	// If you want to use something in the API that's not mapped to a function just use the url directly
-	// Use these if you're familiar with the Twitter API
-
+	
+	#If you want to you use an API call that's not in the library call it using this
+	# e.g.
 	twitter.getCustomApiCall('/followers/ids.json',{ screen_name: 'BoyCook', count: '10'}, error, success);
 	twitter.postCustomApiCall('/friendships/create.json',{user_id: '412312323'}, error, success);
 
