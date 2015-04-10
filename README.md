@@ -56,53 +56,53 @@ To get the list of expected parameters and results, check [https://dev.twitter.c
 ##### Search Tweets. [Documentation](https://dev.twitter.com/rest/reference/get/search/tweets)
 To learn how to use Twitter Search effectively read [Using the Twitter Search API](https://dev.twitter.com/rest/public/search)
 ```javascript	
-	twitter.getSearch(parameters, errorCallback, successCallback)
+	twitter.getSearch(parameters, errorCallback, successCallback);
 ```
 
 
 ##### Update user's status (Tweet). [Documentation](https://dev.twitter.com/rest/reference/post/statuses/update)
 ```javascript
-	twitter.postTweet(parameters, errorCallback, successCallback)
+	twitter.postTweet(parameters, errorCallback, successCallback);
 ```
-##### Follow a another user. [Documentation](https://dev.twitter.com/rest/reference/post/friendships/create)
+##### Follow another user by user\_id or screen_name(handle). [Documentation](https://dev.twitter.com/rest/reference/post/friendships/create)
 ```javascript
-	twitter.postCreateFriendship(parameters, errorCallback, successCallback)
+	twitter.postCreateFriendship(parameters, errorCallback, successCallback);
 ```
 ##### Get a user's timeline[Documentation](https://dev.twitter.com/rest/reference/get/statuses/user_timeline)
 ```javascript
-	twitter.getUserTimeline(parameters, errorCallback, successCallback)
+	twitter.getUserTimeline(parameters, errorCallback, successCallback);
 ```
 ##### Get the latest 20 recent mentions for the authenticating user. [Documentation](https://dev.twitter.com/rest/reference/get/statuses/mentions_timeline)
 ```javascript
-	twitter.getMentionsTimeline(parameters, errorCallback, successCallback)
+	twitter.getMentionsTimeline(parameters, errorCallback, successCallback);
 ```
 ##### Get the latest tweets and retweets by the authenticating users and the ones they follow. [Documentation](https://dev.twitter.com/rest/reference/get/statuses/home_timeline)
 ```javascript
-	twitter.getHomeTimeline(parameters, errorCallback, successCallback)
+	twitter.getHomeTimeline(parameters, errorCallback, successCallback);
 ```
 ##### Get latest retweets of authenticated user. [Documentation](https://dev.twitter.com/rest/reference/get/statuses/retweets_of_me)
 ```javascript
-	twitter.getReTweetsOfMe(parameters, errorCallback, successCallback)
+	twitter.getReTweetsOfMe(parameters, errorCallback, successCallback);
 ```
 ##### Get a tweet by id. [Documentation](https://dev.twitter.com/rest/reference/get/statuses/show/)
 ```javascript
-	twitter.getTweet(parameters, errorCallback, successCallback)
+	twitter.getTweet(parameters, errorCallback, successCallback);
 ```
 ##### Get information about a user by user\_id or handle (screen_name). [Documentation](https://dev.twitter.com/rest/reference/get/users/show)
 ```javascript
-	twitter.getUser(parameters, errorCallback, successCallback)
+	twitter.getUser(parameters, errorCallback, successCallback);
 ```
 ##### Get a cursored collection of the followers of a user\_id or a handle (screen_name). [Documentation](https://dev.twitter.com/rest/reference/get/followers/list)
 ```javascript
-	twitter.getFollowersList(parameters, errorCallback, successCallback)
+	twitter.getFollowersList(parameters, errorCallback, successCallback);
 ```
 ##### Get a cursored collection of the followers' *ids* of a user\_id or a handle (screen_name). [Documentation](https://dev.twitter.com/rest/reference/get/followers/ids)
 ```javascript
-	twitter.getFollowersIds(parameters, errorCallback, successCallbackok)
+	twitter.getFollowersIds(parameters, errorCallback, successCallbackok);
 ```
 ##### Upload media (images) to Twitter. [Documentation](https://dev.twitter.com/rest/reference/post/media/upload)
 ```javascript
-	twitter.postMedia(parameters, errorCallback, successCallback)
+	twitter.postMedia(parameters, errorCallback, successCallback);
 ```
 
 ## Tests
