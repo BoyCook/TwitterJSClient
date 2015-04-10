@@ -1,5 +1,5 @@
 ## Description
-A Twitter Node Module to authenticate and interact with the Twitter API from NodeJS. 
+A Twitter Node Module to authenticate and interact with the Twitter REST API from NodeJS.
 
 ## Installation
 ```	
