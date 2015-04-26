@@ -2,7 +2,6 @@
     "name":"twitter-js-client",
     "description":"Twitter JS Client",
     "version":"0.0.6",
-    "private":true,
     "directories" : { "lib": "./lib" },
     "dependencies":{
         "qs": "*",
