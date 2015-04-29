@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/BoyCook/TwitterJSClient.png?branch=master)](https://travis-ci.org/BoyCook/TwitterJSClient)
 [![Coverage Status](https://coveralls.io/repos/BoyCook/TwitterJSClient/badge.png)](https://coveralls.io/r/BoyCook/TwitterJSClient)
-[![Dependency Status](https://gemnasium.com/BoyCook/CDaaS.png)](https://gemnasium.com/BoyCook/CDaaS)
-[![NPM](https://nodei.co/npm/twitter-js-client.png?downloads=true)](https://nodei.co/npm/twitter-js-client) 
+[![Dependency Status](https://gemnasium.com/BoyCook/TwitterJSClient.png)](https://gemnasium.com/BoyCook/TwitterJSClient)
+[![NPM](https://nodei.co/npm/twitter-js-client.png?downloads=true)](https://nodei.co/npm/twitter-node-client) 
 
 ## Description
 A Twitter Node Module to authenticate and interact with the Twitter REST API from NodeJS.

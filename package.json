@@ -1,5 +1,5 @@
 {
-    "name":"twitter-js-client",
+    "name":"twitter-node-client",
     "description":"Twitter JS Client",
     "version":"0.0.6",
     "directories" : { "lib": "./lib" },
