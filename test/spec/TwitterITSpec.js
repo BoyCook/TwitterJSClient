@@ -43,6 +43,16 @@ describe('Twitter', function () {
         );
     });
 
+    it('should get favorites', function (done) {
+        var params = { count: '10'};
+        twitter.getFavorites(params, error,
+            function (data) {
+                expect(JSON.parse(data).length).toEqual(10);
+                done();
+            }
+        );
+    });
+
     it('should get mentions timeline', function (done) {
         var params = { count: '10'};
         twitter.getMentionsTimeline(params, error,
