@@ -25,7 +25,7 @@ You need to create a [Twitter app](https://dev.twitter.com/apps) to use the API.
     	console.log('Data [%s]', data);
 	};
 
-	var Twitter = require('twitter-js-client').Twitter;
+	var Twitter = require('twitter-node-client').Twitter;
 
 	//Get this data from your twitter apps dashboard
 	var config = {
