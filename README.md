@@ -28,7 +28,7 @@ You need to create a [Twitter app](https://dev.twitter.com/apps) to use the API.
 	var Twitter = require('twitter-node-client').Twitter;
 
 	//Get this data from your twitter apps dashboard
-	var config = {
+	{
     	"consumerKey": "XXX",
     	"consumerSecret": "XXX",
     	"accessToken": "XXX",
@@ -36,7 +36,11 @@ You need to create a [Twitter app](https://dev.twitter.com/apps) to use the API.
     	"callBackUrl": "XXX"
 	}
 
-    var twitter = new Twitter(config);
+	// make a directory in the root folder of your project called data
+	// copy the node_modules/twitter-node-client/twitter_config file over into data/twitter_config`
+	// Open `data/twitter_config` and supply your applications `consumerKey`, 'consumerSecret', 'accessToken', 'accessTokenSecret', 'callBackUrl' to the appropriate fields in your data/twitter_config file
+    
+    var twitter = new Twitter();
 	
 	//Example calls
 
