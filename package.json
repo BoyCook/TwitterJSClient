@@ -4,7 +4,7 @@
     "version":"0.0.6",
     "directories" : { "lib": "./lib" },
     "dependencies":{
-        "qs": "5.2.0",
+        "qs": "6.9.3",
         "oauth": "*"
     }
 }
